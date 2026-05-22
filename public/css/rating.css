@@ -1,0 +1,31 @@
+.starability-slot {
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.starability-slot input {
+  display: none;
+}
+
+.starability-slot label {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  padding: 0 2px;
+}
+
+.starability-slot label::before {
+  content: "★";
+}
+
+.starability-slot input:checked ~ label {
+  color: gold;
+}
+
+.starability-slot label:hover,
+.starability-slot label:hover ~ label {
+  color: gold;
+}
+
